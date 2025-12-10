@@ -114,6 +114,7 @@ cell_combinations = combinations(input_cells, 2)
 areas = [[calculate_area(x1, x2), x1, x2] for x1, x2 in cell_combinations]
 areas.sort(key=lambda x: x[0], reverse=True)
 
+print("HERE")
 for area, c1, c2 in areas:
     min_x, max_x = min(c1.x, c2.x), max(c1.x, c2.x)
     min_y, max_y = min(c1.y, c2.y), max(c1.y, c2.y)
